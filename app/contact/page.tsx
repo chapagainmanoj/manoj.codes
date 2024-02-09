@@ -1,28 +1,34 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, Mail, Crown, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
 	{
-		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
-		label: "Twitter",
-		handle: "@chronark_",
-	},
-	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@manoj.codes",
+		href: "mailto:chapagainmanoj35@gmail.com",
 		label: "Email",
-		handle: "dev@manoj.codes",
+		handle: "chapagainmanoj35@gmail.com",
 	},
 	{
 		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
+		href: "https://github.com/chapagainmanoj",
 		label: "Github",
-		handle: "chronark",
+		handle: "chapagainmanoj",
 	},
+	{
+		icon: <Crown size={20} />,
+		href: "https://lichess.org/@/imsober",
+		label: "Lichess",
+		handle: "imsober",
+	},
+	{
+		icon: <Twitter size={20} />,
+		href: "https://twitter.com/__man0j",
+		label: "Twitter",
+		handle: "__man0j",
+	}
 ];
 
 export default function Example() {

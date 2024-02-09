@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { allBlogs, allProjects } from "contentlayer/generated";
+import { allBlogs } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
@@ -8,11 +8,10 @@ import { Article } from "./article";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-
-  const featured = allProjects.find((project) => project.slug === "asynccasbin")!;
-  const top2 = allProjects.find((project) => project.slug === "databases-extensions")!;
-  const top3 = allProjects.find((project) => project.slug === "query-by-humming")!;
-  const sorted = allProjects
+  const featured = allBlogs.find((project) => project.slug === "tainted-kernel")!;
+  const top2 = allBlogs.find((project) => project.slug === "binary-installers")!;
+  const top3 = allBlogs.find((project) => project.slug === "first-react-project")!;
+  const sorted = allBlogs
     .filter((p) => p.published)
     .filter(
       (project) =>
@@ -32,17 +31,17 @@ export default async function ProjectsPage() {
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            Projects
+            Blog
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+          Some of the articles are from work and some are on my own time.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/projects/${featured.slug}`}>
+            <Link href={`/blog/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">

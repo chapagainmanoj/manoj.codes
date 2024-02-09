@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     default: "manoj.codes",
     template: "%s | manoj.codes",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Software Engineer: Codes for fun and living.",
   openGraph: {
     title: "manoj.codes",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "Software Engineer: Codes for fun and living.",
     url: "https://manoj.codes",
     siteName: "manoj.codes",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "__man0j",
     card: "summary_large_image",
   },
   icons: {

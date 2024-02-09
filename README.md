@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://manoj.codes"><h1 align="center">manoj.codes</h1></a>
 
-My personal website, built with adapted from [chronark.com](https://github.com/chronark/chronark.com)
+My personal website, adapted from [chronark.com](https://github.com/chronark/chronark.com)
 
 ## Running Locally
 
