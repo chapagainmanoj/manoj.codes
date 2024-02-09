@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Crown, Twitter } from "lucide-react";
+import { Github, Mail, Crown, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -15,6 +15,12 @@ const socials = [
 		icon: <Github size={20} />,
 		href: "https://github.com/chapagainmanoj",
 		label: "Github",
+		handle: "chapagainmanoj",
+	},
+	{
+		icon: <Linkedin size={20} />,
+		href: "https://www.linkedin.com/in/chapagainmanoj/",
+		label: "Linkedin",
 		handle: "chapagainmanoj",
 	},
 	{
