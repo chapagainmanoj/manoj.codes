@@ -1,9 +1,7 @@
 name: publish-to-github-pages
 on:
   push:
-    branches:
-      - master
-      - release/0.2.x
+    branches: ["develop"]
 
 permissions:
   contents: read
