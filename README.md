@@ -5,7 +5,7 @@ My personal website, adapted from [chronark.com](https://github.com/chronark/chr
 
 ## Running Locally
 
-```sh-session
+```bash
 git clone https://github.com/chronark/manoj.codes.git
 cd manoj.codes
 ```
@@ -13,7 +13,7 @@ cd manoj.codes
 Create a `.env` file similar to [`.env.example`](https://github.com/chronark/manoj.codes/blob/main/.env.example).
 
 Then install dependencies and run the development server:
-```sh-session
+```bash
 npm install
 npm run dev
 ```
