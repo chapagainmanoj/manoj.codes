@@ -43,6 +43,10 @@ export default function Home() {
               Currently, I am open to new challenges. Let's build something cool together.
             </p>
           </div>
+          <a href="/Resume3_0.pdf" target="_blank" className="text-zinc-400 text-sm hover:text-zinc-300 py-2 inline-flex items-center">
+            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+            <span>Resume</span>
+          </a>
         </div>
       </div>
     </div>
