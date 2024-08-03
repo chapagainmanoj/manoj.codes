@@ -17,7 +17,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-400 hover:text-zinc-300"
+              className="duration-500 text-zinc-400 hover:text-zinc-300"
             >
               {item.name}
             </Link>
@@ -34,21 +34,22 @@ export default function Home() {
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="flex animate-fade-in justify-center items-center">
-        <div className="p-8 rounded-lg shadow-lg lg:w-1/2">
+      <div className="max-w-md animate-fade-in justify-center items-center">
+        <div className="p-8 rounded-lg shadow-lg">
           <div className="text-center">
-            <h2 className="text-lg font-semibold text-zinc-400 mb-6">Hey people 👋</h2>
+            <h2 className="text-lg text-zinc-400 mb-6">Hey people 👋</h2>
             <p className="text-sm text-zinc-400">
-              I'm passionate about technology -- not a specific framework or language. I think it's about adaptation and using what works best for the project.
-              Currently, I am open to new challenges. Let's build something cool together.
+              Have a special affection with .py, .js, .ts, .tsx, .git*, .yaml, .sh, .toml, .conf
+              <br />
+              Let's build something cool together! 🚀
             </p>
           </div>
-          <a href="/Resume3_0.pdf" target="_blank" className="text-zinc-400 text-sm hover:text-zinc-300 py-2 inline-flex items-center">
-            <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-            <span>Resume</span>
-          </a>
         </div>
       </div>
+      <a href="/ManojChapagain-Resume.pdf" target="_blank" className="mt-6 text-zinc-400 text-sm hover:text-zinc-300 py-2 inline-flex items-center">
+        <svg className="fill-current w-4 h-4 mr-2 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+        <span>Resume</span>
+      </a>
     </div>
   );
 

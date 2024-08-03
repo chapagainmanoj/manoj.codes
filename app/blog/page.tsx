@@ -34,7 +34,7 @@ export default async function ProjectsPage() {
             Blog
           </h2>
           <p className="mt-4 text-zinc-400">
-          Some of the articles are from work and some are on my own time.
+            Most of the time I am super lazy, sometimes I get super motivated thats when I try to write about my journey, learnings, and sometime thoughts.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -91,7 +91,7 @@ export default async function ProjectsPage() {
               .filter((_, i) => i % 3 === 0)
               .map((project) => (
                 <Card key={project.slug}>
-                  <Article project={project}/>
+                  <Article project={project} />
                 </Card>
               ))}
           </div>
