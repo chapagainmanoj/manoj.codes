@@ -10,10 +10,11 @@ export const metadata: Metadata = {
     template: "%s | manoj.codes",
   },
   description: "Software Engineer: Codes for fun and living.",
+  keywords: "Manoj Chapagain, full-stack developer, web developer, software engineer, Python developer, JavaScript developer, TypeScript, tech blog, developer portfolio, coding projects, North York developer, tech enthusiast, software projects, API development, web development, programming, coding, .py, .js, .tsx, .yaml, Git, open-source",
   openGraph: {
     title: "manoj.codes",
     description:
-      "Software Engineer: Codes for fun and living.",
+      "Welcome to the personal website of Manoj Chapagain, a passionate full-stack developer skilled in Python, JavaScript, TypeScript, and more. Software Engineer: Codes for fun and living. Explore my projects, blog, and get in touch to collaborate on innovative tech solutions!",
     url: "https://manoj.codes",
     siteName: "manoj.codes",
     images: [

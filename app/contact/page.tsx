@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Crown, Twitter, Linkedin } from "lucide-react";
+import { Github, Mail, Crown, Twitter, Linkedin, Download } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -34,7 +34,14 @@ const socials = [
 		href: "https://twitter.com/__man0j",
 		label: "Twitter",
 		handle: "__man0j",
-	}
+	},
+	{
+		icon: <Download size={20} />,
+		href: "/ManojChapagain-Resume.pdf",
+		label: "Download",
+		handle: "Resume",
+	},
+
 ];
 
 export default function Contact() {

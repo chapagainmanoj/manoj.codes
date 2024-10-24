@@ -11,7 +11,7 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
+      <nav className="my-14 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -36,20 +36,23 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="max-w-md animate-fade-in justify-center items-center">
         <div className="p-8 rounded-lg shadow-lg">
-          <div className="text-center">
+          <div className="text-left">
             <h2 className="text-lg text-zinc-400 mb-6">Hey people 👋</h2>
             <p className="text-sm text-zinc-400">
-              Have a special affection with .py, .js, .ts, .tsx, .git*, .yaml, .sh, .toml, .conf
+              I code for living and fun. I have a special love for .py, .js, .ts, .tsx, .git*, .yaml, .sh, .toml, .conf files.
               <br />
-              Let's build something cool together! 🚀
+              Let's collaborate and create something amazing! 🚀
             </p>
           </div>
         </div>
       </div>
-      <a href="/ManojChapagain-Resume.pdf" target="_blank" className="mt-6 text-zinc-400 text-sm hover:text-zinc-300 py-2 inline-flex items-center">
-        <svg className="fill-current w-4 h-4 mr-2 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
-        <span>Resume</span>
-      </a>
+      {/* <a href="/ManojChapagain-Resume.pdf" target="_blank" className="mt-12 text-zinc-400 hover:text-zinc-300 py-2 inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">
+          <path d="M8.75 2.75a.75.75 0 0 0-1.5 0v5.69L5.03 6.22a.75.75 0 0 0-1.06 1.06l3.5 3.5a.75.75 0 0 0 1.06 0l3.5-3.5a.75.75 0 0 0-1.06-1.06L8.75 8.44V2.75Z" />
+          <path d="M3.5 9.75a.75.75 0 0 0-1.5 0v1.5A2.75 2.75 0 0 0 4.75 14h6.5A2.75 2.75 0 0 0 14 11.25v-1.5a.75.75 0 0 0-1.5 0v1.5c0 .69-.56 1.25-1.25 1.25h-6.5c-.69 0-1.25-.56-1.25-1.25v-1.5Z" />
+        </svg>
+        <span className="px-1">Resume</span>
+      </a> */}
     </div>
   );
 
