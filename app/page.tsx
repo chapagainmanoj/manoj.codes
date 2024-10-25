@@ -11,7 +11,7 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-14 animate-fade-in">
+      <nav className="animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -24,23 +24,25 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        manoj.codes
-      </h1>
-
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="text-center my-14">
+        <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={200}
+        />
+        <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+          manoj.codes
+        </h1>
+        <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      </div>
       <div className="max-w-md animate-fade-in justify-center items-center">
         <div className="p-8 rounded-lg shadow-lg">
           <div className="text-left">
             <h2 className="text-lg text-zinc-400 mb-6">Hey people 👋</h2>
             <p className="text-sm text-zinc-400">
               I code for living and fun. I have a special love for .py, .js, .ts, .tsx, .git*, .yaml, .sh, .toml, .conf files.
-              <br />
+            </p>
+            <p className="text-sm text-zinc-400 mt-2">
               Let's collaborate and create something amazing! 🚀
             </p>
           </div>
