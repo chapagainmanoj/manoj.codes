@@ -11,7 +11,7 @@ export function Analytics() {
 				data-token={token}
 				async
 			/>
-			<GoogleAnalytics gaId="G-18MSLYGHGM" />
+			{/* <GoogleAnalytics gaId="G-18MSLYGHGM" />
 			<script
 				dangerouslySetInnerHTML={{
 					__html: `
@@ -22,7 +22,7 @@ export function Analytics() {
 				gtag('config', 'G-18MSLYGHGM');
             	`,
 				}}
-			/>
+			/> */}
 		</>
 	);
 }

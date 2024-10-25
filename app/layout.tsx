@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     default: "manoj.codes",
     template: "%s | manoj.codes",
   },
+  verification: { "google": "wkjj30wMlw0Z7xi2K6shlw_3BFHau8e6r78_oKRSOV8" },
   description: "Software Engineer: Codes for fun and living.",
   keywords: "Manoj Chapagain, full-stack developer, web developer, software engineer, Python developer, JavaScript developer, TypeScript, tech blog, developer portfolio, coding projects, North York developer, tech enthusiast, software projects, API development, web development, programming, coding, .py, .js, .tsx, .yaml, Git, open-source",
   openGraph: {
