@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     template: "%s | manoj.codes",
   },
   verification: { "google": "wkjj30wMlw0Z7xi2K6shlw_3BFHau8e6r78_oKRSOV8" },
-  description: "Software Engineer: Codes for fun and living.",
+  description: "Welcome to the personal website of Manoj Chapagain, a passionate full-stack developer skilled in Python, JavaScript, TypeScript, and more. Software Engineer: Codes for fun and living. Explore my projects, blog, and get in touch to collaborate on innovative tech solutions!",
   keywords: "Manoj Chapagain, full-stack developer, web developer, software engineer, Python developer, JavaScript developer, TypeScript, tech blog, developer portfolio, coding projects, North York developer, tech enthusiast, software projects, API development, web development, programming, coding, .py, .js, .tsx, .yaml, Git, open-source",
   openGraph: {
     title: "manoj.codes",
     description:
-      "Welcome to the personal website of Manoj Chapagain, a passionate full-stack developer skilled in Python, JavaScript, TypeScript, and more. Software Engineer: Codes for fun and living. Explore my projects, blog, and get in touch to collaborate on innovative tech solutions!",
+      "Software Engineer: Based in Toronto.",
     url: "https://manoj.codes",
     siteName: "manoj.codes",
     images: [
