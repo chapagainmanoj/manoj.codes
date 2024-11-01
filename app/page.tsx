@@ -35,7 +35,7 @@ export default function Home() {
         </h1>
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       </div>
-      <div className="max-w-md animate-fade-in justify-center items-center">
+      <div className="animate-fade-in justify-center items-center">
         <div className="p-8 rounded-lg shadow-lg">
           <div className="text-left">
             <h2 className="text-lg text-zinc-400 mb-6">Hey people 👋</h2>
