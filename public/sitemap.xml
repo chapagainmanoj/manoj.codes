@@ -71,6 +71,12 @@
   </url>
 
   <!-- Additional Blog Posts  -->
+    <url>
+    <loc>https://manoj.codes/blog/developers-spectrum</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://manoj.codes/blog/tainted-kernel</loc>
     <lastmod>2021-02-28</lastmod>
