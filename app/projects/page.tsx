@@ -9,8 +9,8 @@ import { Article } from "./article";
 export const revalidate = 60;
 export default async function ProjectsPage() {
 
-  const featured = allProjects.find((project) => project.slug === "dcode-shapes")!;
-  const top1 = allProjects.find((project) => project.slug === "asynccasbin")!;
+  const featured = allProjects.find((project) => project.slug === "no-not-again")!;
+  const top1 = allProjects.find((project) => project.slug === "dcode-shapes")!;
   const top2 = allProjects.find((project) => project.slug === "databases-extensions")!;
   const sorted = allProjects
     .filter((p) => p.published)

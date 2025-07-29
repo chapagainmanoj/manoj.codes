@@ -6,16 +6,16 @@ published: true
   
 ---
 
-Binary files contain binary data, which are usually machine-readable sequences of bytes. There are many binary formats and most of which are compiled versions of source code, meaning that they’re executable. On the other hand, some are non-executable files like BLOB (binary large object) and can contain an image, video, or any rich multimedia object.
+Binary files contain binary data, which are usually machine-readable sequences of bytes. There are many binary formats and most of which are compiled versions of source code, meaning that they're executable. On the other hand, some are non-executable files like BLOB (binary large object) and can contain an image, video, or any rich multimedia object.
 
-The .sh files are also executable. The .sh files are the shell script files that contain commands. They’re normally used to automate things and can be used as an installer as well.
+The .sh files are also executable. The .sh files are the shell script files that contain commands. They're normally used to automate things and can be used as an installer as well.
 
 A binary package is an application package that contains (pre-built) executables, build from source code, and are not reversible. The most important advantage of binary is the ability to hide source code and prevent future modifications. Linux can execute a binary even if it has .bin or any filename; extensions are somehow irrelevant.
 
 In Linux systems, the standard directory for binary files or packages is /usr/bin, where most of the system-specific binaries are found. Also, /user/local/bin is where non-system binaries i.e. locally compiled or maintained packages are kept. However, both of these directories are for all system-wide users. For a specific user, we should not keep binaries there, the proper directory for it is $HOME/bin or $HOME/.local/bin.
 
 ### Creating Binary From Source
-Let’s create an application and compile it into a binary file:
+Let's create an application and compile it into a binary file:
 
 ```bash
 $ cat > demo.c <<EOF
@@ -26,7 +26,7 @@ $ cat > demo.c <<EOF
 EOF
 ```
 
-Now, we’ll compile it:
+Now, we'll compile it:
 
 ```bash
 $ gcc demo.c -o demo
@@ -40,9 +40,9 @@ Hello, World!
 If the source consists of a bunch of files it would be very tedious to compile as shown above. For these cases, we can use make to automate and manage the build process. It requires a configuration file containing a set of tasks called a Makefile.
 
 ### Creating Binary From .sh
-Shell Script Compiler or SHC is a tool that takes scripts and encodes or encrypts them. With that, it prevents unwanted modification and hides source code. We’ll use generic shell compiler for our example. There are many other tools to compile or obfuscate scripts.
+Shell Script Compiler or SHC is a tool that takes scripts and encodes or encrypts them. With that, it prevents unwanted modification and hides source code. We'll use generic shell compiler for our example. There are many other tools to compile or obfuscate scripts.
 
-Foremost, let’s create a script sum.sh that returns the sum of entered numbers:
+Foremost, let's create a script sum.sh that returns the sum of entered numbers:
 
 ```bash
 #!/bin/bash
@@ -69,7 +69,7 @@ $ chmod +x sum.sh
 $ ./sum.sh 8 9 10
 27
 ```
-Next, let’s download and install the latest version of SHC. Then compile the script and convert it to binary:
+Next, let's download and install the latest version of SHC. Then compile the script and convert it to binary:
 ```bash
 $ shc -U -f sum.sh
 ```
@@ -81,9 +81,9 @@ $ ./sum.bin
 ### Self Extracting Installer
 Normally, we use a package manager for installing, updating, and removing packages. They automate the process of downloading, extracting, and verifying the package.
 
-However, they’re not the only way of managing the installation. Adding a binary payload or an archive file to a shell script is one way to distribute the package. The self-extracting installer extracts that payload and copies content to the appropriate location.
+However, they're not the only way of managing the installation. Adding a binary payload or an archive file to a shell script is one way to distribute the package. The self-extracting installer extracts that payload and copies content to the appropriate location.
 
-Here, we’re going to explore how we can use .sh files as an installer. For our example, let’s create a package source:
+Here, we're going to explore how we can use .sh files as an installer. For our example, let's create a package source:
 
 ```bash
 $ mkdir demo-package && touch demo-package/demo-app.txt
@@ -93,7 +93,7 @@ Then build and archive the demo package:
 ```bash
 $ tar -cvf archive.tar demo-package ; gzip -9 archive.tar
 ```
-Now, let’s create an installer script installer.sh:
+Now, let's create an installer script installer.sh:
 
 ```bash
 #!/bin/bash
@@ -137,7 +137,7 @@ And finally, our installer is ready. We can run it to install our package to ~/:
 ```bash
 $ ./installer.sh
 ```
-We’re not advised to use this example in production, due to its venerability to malicious modifications. Also, since they do not work with a package manager, resolving their dependencies may be troublesome, and so, some such packages use statically linked executables, which means they have all necessary libraries added into them as well. These additional libraries waste a bit of memory when they’re used in comparison to installation from the package manager.
+We're not advised to use this example in production, due to its venerability to malicious modifications. Also, since they do not work with a package manager, resolving their dependencies may be troublesome, and so, some such packages use statically linked executables, which means they have all necessary libraries added into them as well. These additional libraries waste a bit of memory when they're used in comparison to installation from the package manager.
 
 ### Using makeself
 We can also use a command-line tool like makeself to create a self-extracting installer. It has plenty of options we need for an installer. It includes a checksum for integrity and self validate, which mitigate the major security flaw in our previous example.
@@ -146,7 +146,7 @@ The syntax:
 ```bash
 $ makeself.sh [args] package_directory file_name label startup_script [script_args]
 ```
-Here in this example, we have a package source /demo-app and we’re going to create an installer called demo-pkg.run:
+Here in this example, we have a package source /demo-app and we're going to create an installer called demo-pkg.run:
 ```bash
 $ makeself.sh --notemp ./demo-app ./demo-pkg.run "SFX archive for backup" echo "Extraction done"
 Header is 715 lines long

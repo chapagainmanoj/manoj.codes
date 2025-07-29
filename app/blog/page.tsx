@@ -10,9 +10,9 @@ export const revalidate = 60;
 export default async function ProjectsPage() {
   console.log("allBlogs", allBlogs.map((p) => p.slug));
 
-  const featured = allBlogs.find((project) => project.slug === "tainted-kernel")!;
+  const featured = allBlogs.find((project) => project.slug === "developers-spectrum")!;
   // const top2 = allBlogs.find((project) => project.slug === "binary-installers")!;
-  const top2 = allBlogs.find((project) => project.slug === "developers-spectrum")!;
+  const top2 = allBlogs.find((project) => project.slug === "tainted-kernel")!;
   const top3 = allBlogs.find((project) => project.slug === "first-react-project")!;
   const sorted = allBlogs
     .filter((p) => p.published)
