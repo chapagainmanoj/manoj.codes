@@ -28,6 +28,12 @@
 
 
   <!-- Additional Projects  -->
+    <url>
+    <loc>https://manoj.codes/projects/job-copilot</loc>
+    <lastmod>2025-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://manoj.codes/projects/no-not-again</loc>
     <lastmod>2025-07-28</lastmod>
