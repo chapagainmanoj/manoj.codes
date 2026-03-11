@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://manoj.codes/</loc>
+    <loc>https://manojc.link/</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
 
   <url>
-    <loc>https://manoj.codes/ManojChapagain-Resume.pdf</loc>
+    <loc>https://manojc.link/ManojChapagain-Resume.pdf</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -20,7 +20,7 @@
 
   <!-- Projects Page -->
   <url>
-    <loc>https://manoj.codes/projects</loc>
+    <loc>https://manojc.link/projects</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -29,43 +29,43 @@
 
   <!-- Additional Projects  -->
     <url>
-    <loc>https://manoj.codes/projects/job-copilot</loc>
+    <loc>https://manojc.link/projects/job-copilot</loc>
     <lastmod>2025-08-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/no-not-again</loc>
+    <loc>https://manojc.link/projects/no-not-again</loc>
     <lastmod>2025-07-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/dcode-shapes</loc>
+    <loc>https://manojc.link/projects/dcode-shapes</loc>
     <lastmod>2024-10-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/asynccasbin</loc>
+    <loc>https://manojc.link/projects/asynccasbin</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/databases-extensions</loc>
+    <loc>https://manojc.link/projects/databases-extensions</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/query-by-humming</loc>
+    <loc>https://manojc.link/projects/query-by-humming</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/projects/khalti-sdk-web</loc>
+    <loc>https://manojc.link/projects/khalti-sdk-web</loc>
     <lastmod>2024-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -74,7 +74,7 @@
 
   <!-- Contact Page -->
   <url>
-    <loc>https://manoj.codes/contact</loc>
+    <loc>https://manojc.link/contact</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -83,7 +83,7 @@
 
   <!-- Blog Page -->
   <url>
-    <loc>https://manoj.codes/blog</loc>
+    <loc>https://manojc.link/blog</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -91,31 +91,31 @@
 
   <!-- Additional Blog Posts  -->
     <url>
-    <loc>https://manoj.codes/blog/developers-spectrum</loc>
+    <loc>https://manojc.link/blog/developers-spectrum</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/blog/tainted-kernel</loc>
+    <loc>https://manojc.link/blog/tainted-kernel</loc>
     <lastmod>2021-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/blog/binary-installers</loc>
+    <loc>https://manojc.link/blog/binary-installers</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/blog/first-react-project</loc>
+    <loc>https://manojc.link/blog/first-react-project</loc>
     <lastmod>2024-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://manoj.codes/blog/i-smell-bullshit</loc>
+    <loc>https://manojc.link/blog/i-smell-bullshit</loc>
     <lastmod>2018-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
