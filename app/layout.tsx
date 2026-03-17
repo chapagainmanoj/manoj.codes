@@ -5,74 +5,76 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  title: {
-    default: "manojc.link",
-    template: "%s | manojc.link",
-  },
-  verification: { "google": "wkjj30wMlw0Z7xi2K6shlw_3BFHau8e6r78_oKRSOV8" },
-  description: "Welcome to the personal website of Manoj Chapagain, a passionate full-stack developer skilled in Python, JavaScript, TypeScript, and more. Software Engineer: Codes for fun and living. Explore my projects, blog, and get in touch to collaborate on innovative tech solutions!",
-  keywords: "Manoj Chapagain, full-stack developer, web developer, software engineer, Python developer, JavaScript developer, TypeScript, tech blog, developer portfolio, coding projects, North York developer, tech enthusiast, software projects, API development, web development, programming, coding, .py, .js, .tsx, .yaml, Git, open-source",
-  openGraph: {
-    title: "manojc.link",
-    description:
-      "Software Engineer: Based in Toronto.",
-    url: "https://manojc.link",
-    siteName: "manojc.link",
-    images: [
-      {
-        url: "https://manojc.link/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
-    locale: "en-US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "__man0j",
-    card: "summary_large_image",
-  },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+	title: {
+		default: "manojc.link",
+		template: "%s | manojc.link",
+	},
+	verification: { google: "wkjj30wMlw0Z7xi2K6shlw_3BFHau8e6r78_oKRSOV8" },
+	description:
+		"Welcome to the personal website of Manoj Chapagain, a passionate full-stack developer skilled in Python, JavaScript, TypeScript, and more. Software Engineer: Codes for fun and living. Explore my projects, blog, and get in touch to collaborate on innovative tech solutions!",
+	keywords:
+		"Manoj Chapagain, full-stack developer, web developer, software engineer, Python developer, JavaScript developer, TypeScript, tech blog, developer portfolio, coding projects, North York developer, tech enthusiast, software projects, API development, web development, programming, coding, .py, .js, .tsx, .yaml, Git, open-source",
+	openGraph: {
+		title: "manojc.link",
+		description: "Software Engineer: Based in Toronto.",
+		url: "https://manojc.link",
+		siteName: "manojc.link",
+		images: [
+			{
+				url: "https://manojc.link/og.png",
+				width: 1920,
+				height: 1080,
+			},
+		],
+		locale: "en-US",
+		type: "website",
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			"max-video-preview": -1,
+			"max-image-preview": "large",
+			"max-snippet": -1,
+		},
+	},
+	twitter: {
+		title: "__man0j",
+		card: "summary_large_image",
+	},
+	icons: {
+		shortcut: "/favicon.png",
+	},
 };
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+	subsets: ["latin"],
+	variable: "--font-inter",
 });
 
 const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
+	src: "../public/fonts/CalSans-SemiBold.ttf",
+	variable: "--font-calsans",
 });
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-      <head>
-        <Analytics />
-      </head>
-      <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : ""
-          }`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+			<head>
+				<Analytics />
+			</head>
+			<body
+				className={`bg-black ${
+					process.env.NODE_ENV === "development" ? "debug-screens" : ""
+				}`}
+			>
+				{children}
+			</body>
+		</html>
+	);
 }

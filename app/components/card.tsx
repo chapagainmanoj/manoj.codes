@@ -1,9 +1,5 @@
 "use client";
-import {
-	motion,
-	useMotionTemplate,
-	useSpring,
-} from "framer-motion";
+import { motion, useMotionTemplate, useSpring } from "framer-motion";
 
 import { MouseEventHandler, PropsWithChildren } from "react";
 
