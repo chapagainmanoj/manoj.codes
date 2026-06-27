@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://manoj.codes
+Host: https://manojc.link
 
 # Sitemaps
-Sitemap: https://manoj.codes/sitemap.xml
+Sitemap: https://manojc.link/sitemap.xml
