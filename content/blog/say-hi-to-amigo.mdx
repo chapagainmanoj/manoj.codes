@@ -1,0 +1,105 @@
+---
+title: "Meet Amigo: The Open-Source AI Friend That Reaches Out First"
+description: "Why traditional productivity apps fail, why reactive AI assistants aren't enough, and how we're building a free, open-source 'friend layer' for daily accountability and companionship."
+date: "2026-06-27T20:00:00.000Z"
+published: true
+---
+
+Every productivity app puts the burden entirely on you. You have to open it. You have to log your tasks. You have to remember to check it. If you forget, it stays silentor worse, it sends generic, nagging notifications that you learn to swipe away. 
+
+Even the most advanced AI assistants today are reactive. They wait in a tab, silent, until you ask them a question. 
+
+We built **Amigo** to change that. Amigo isn't a chatbot you queryit is a proactive AI friend that reaches out first. It knows your routine, remembers your stories, notices when you're overwhelmed, and gently keeps you accountable to what you said you wanted to do. 
+
+Think of it less like a to-do list, and more like a supportive older sibling.
+
+---
+
+## Why This Matters
+
+We live in a strange time. We're more connected than ever, yet many of us go through entire days without a single meaningful check-in from someone who genuinely cares how we're doing. Loneliness isn't always dramatic  sometimes it's just the quiet absence of someone asking *"how did that thing go?"* or *"did you eat today?"*
+
+The original idea behind Amigo wasn't productivity at all. It started as a question: **what if technology could provide a consistent, caring presence for people who need one?** Not a replacement for human relationships  but a bridge. Something that notices you, remembers what you care about, and shows up for you every day.
+
+That seed came from mental health. There's a growing body of work around AI-assisted wellbeing  tools built on frameworks like **Cognitive Behavioral Therapy (CBT)** that help people reframe negative thought patterns, build healthier habits, and track their emotional state over time. We're inspired by that work and by the people building in that space.
+
+Amigo doesn't do therapy today. But the architecture is designed with that future in mind. The adaptive coaching personality, the temporal memory that tracks how your patterns change, the sentiment-aware gating that adjusts its tone when you're having a rough day  these are all building blocks toward something deeper. We'd love to eventually integrate structured CBT-inspired techniques: guided journaling prompts, gentle cognitive reframing, mood tracking that actually learns from your life context.
+
+For now, Amigo starts where most people need it most: just showing up, consistently, and helping you follow through on what matters to you.
+
+---
+
+## The Daily Loop
+
+Amigo lives where you already talk to your friends: **Telegram**. Here is how a typical day with Amigo looks:
+
+* **Morning Planning (8:30 AM)**: 
+  > **Amigo**: *Morning Mano! Yesterday you had 'call mom' and 'finish slides' on your list. How did those go? What's on the plate for today?*
+  > 
+  > **You**: *Slides are done, but I still need to call Mom. Today I need to go to the gym and write that blog post.*
+  
+* **Smart Reminders (2:00 PM)**: 
+  > **Amigo**: *Hey, it's almost 2 PMyou mentioned wanting to call your mom today. Good time?*
+  > 
+  > **You**: *Done! ✅*
+  > 
+  > **Amigo**: *(Notes completion, cancels further reminders)*
+  
+* **Accountability Check (8:00 PM)**:
+  > **Amigo**: *So 'write blog post' is still outstanding. Should we carry it over to tomorrow or drop it?*
+
+![Telegram Conversation Screenshot](/amigo_assets/telegram_ui.png)
+*(Above: Real-time task checking and natural language updates via Telegram)*
+
+---
+
+## What Makes Amigo Different?
+
+Building a proactive agent is easy; building one that doesn't drive you crazy is incredibly hard. Amigo is designed from the ground up with systems to ensure it feels like a friend, not a nagging bot.
+
+### 1. The Anti-Nag Governor
+Traditional notification systems are annoying because they don't understand context. Amigo implements a strict behavioral governor:
+* **Category Cooldowns**: Never sends two proactive messages within 45 minutes.
+* **Daily Message Budget**: Restricts itself to a maximum of 4 proactive check-ins per day.
+* **Progressive Back-off**: If you ignore 3 messages, Amigo pauses that category for 24 hours. It knows when to leave you alone.
+
+### 2. Adaptive Coaching Personality
+Amigo isn't a flat, static assistant. It monitors how you respond and dynamically shifts its personality across five axes:
+* **Warmth**: Professional ↔ Casual
+* **Directiveness**: Suggestive ↔ Direct
+* **Challenge**: Gentle ↔ Pushing
+* **Verbosity**: Concise ↔ Conversational
+* **Emotional Depth**: Surface ↔ Deep
+
+By default, Amigo starts as a warm, supportive sibling who is accountable but never judgmental, adjusting its tone over time to match what works best for you.
+
+### 3. Temporal Memory & Trust
+Most LLM applications have "goldfish memory"they forget the context after a few messages or get confused when your habits change. Amigo uses a temporal memory graph. If you start a new job and your wake time shifts from 7 AM to 8 AM, Amigo updates its internal model of you gracefully without getting stuck in the past.
+
+Importantly, we believe in absolute transparency. Amigo features a **Memory Inspector**a web dashboard where you can see exactly what Amigo knows about you, pause its learning, or delete memories with a single click.
+
+![Web Dashboard Screenshot](/amigo_assets/dashboard_ui.png)
+*(Above: The Memory Inspector and task pairing dashboard)*
+
+---
+
+## Technical Architecture
+
+To make Amigo fast, reliable, and cost-effective, we designed a hybrid routing architecture:
+* **Backend**: Python 3.12 + FastAPI
+* **Agent Framework**: Pydantic AI for clean tool calling loops
+* **Intelligence**: Gemini 2.5 Flash for routine tasks (task extraction, reminder scheduling) and Claude Sonnet for deep emotional conversations
+* **Database & Auth**: Supabase (PostgreSQL + pgvector for semantic memory)
+* **Web Dashboard**: React (Vite) with Realtime subscriptions to track tasks and reminders
+
+---
+
+## Open Source & Getting Started
+
+Amigo is completely free, open-source, and self-hostable. We'd love for you to try it out, self-host it, or contribute to the repository!
+
+1. **Join the Telegram Bot**: Try it directly at [t.me/YoursAmigoBot](https://t.me/YoursAmigoBot)
+2. **Access your Dashboard**: Create an account to manage your tasks, adjust reminder settings, and inspect Amigo's memory.
+3. **Explore the Code**: Check out our repository on GitHub: [chapagainmanoj/amigo](https://github.com/chapagainmanoj/amigo)
+
+We'd love to hear your feedback! Send `/feedback` directly in the chat to let us know how we can make Amigo a better companion for you.

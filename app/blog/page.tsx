@@ -12,10 +12,10 @@ export default async function ProjectsPage() {
 		allBlogs.map((p) => p.slug),
 	);
 
-	const featured = allBlogs.find((project) => project.slug === "rag-example")!;
+	const featured = allBlogs.find((project) => project.slug === "say-hi-to-amigo")!;
 	// const top2 = allBlogs.find((project) => project.slug === "fine-tuning-gpt-2")!;
 	const top2 = allBlogs.find(
-		(project) => project.slug === "fine-tuning-gpt-2",
+		(project) => project.slug === "rag-example",
 	)!;
 	const top3 = allBlogs.find((project) => project.slug === "tainted-kernel")!;
 	const sorted = allBlogs
