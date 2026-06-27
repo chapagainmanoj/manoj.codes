@@ -1,6 +1,5 @@
 "use client";
-import { GoogleAnalytics } from '@next/third-parties/google'
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export function Analytics() {
 	const token = "6a077f15-152f-4940-b04e-e143a62b4ca1";

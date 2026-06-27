@@ -41,7 +41,6 @@ const socials = [
 		label: "Download",
 		handle: "Resume",
 	},
-
 ];
 
 export default function Contact() {

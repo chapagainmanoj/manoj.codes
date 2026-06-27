@@ -11,7 +11,6 @@ type Props = {
 		repository?: string;
 		type?: string;
 	};
-
 };
 export const Header: React.FC<Props> = ({ project }) => {
 	const ref = useRef<HTMLElement>(null);
@@ -75,7 +74,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 					</div>
 
 					<Link
-						href={`${project.type === "Blog" ? "/blog":"/projects"}`}
+						href={`${project.type === "Blog" ? "/blog" : "/projects"}`}
 						className={`duration-200 hover:font-medium ${
 							isIntersecting
 								? " text-zinc-400 hover:text-zinc-100"
